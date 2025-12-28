@@ -1,0 +1,1859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.7 on darwin)" generated="2025-12-28T08:59:53.601141" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab4 Valid" source="/Users/kriangkrai/Git_soften/TestAutomationLab/lab4_valid.robot">
+<kw name="Lab4 Suite Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Open Lab4 Test Browser" owner="lab4_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:53.664885" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<arg>${LAB4_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-28T08:59:53.664699" elapsed="0.668345"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${LAB4_DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-12-28T08:59:54.333446" elapsed="0.000392"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-28T08:59:54.333910" elapsed="0.574935"/>
+</kw>
+<doc>เปิด Chrome Browser สำหรับการทดสอบ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:53.664269" elapsed="1.244957"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T08:59:54.910322" level="INFO">Lab4 Test Suite Started with Chrome Browser</msg>
+<arg>Lab4 Test Suite Started with Chrome Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T08:59:54.909583" elapsed="0.000847"/>
+</kw>
+<doc>Setup สำหรับ test suite ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:53.664058" elapsed="1.246513"/>
+</kw>
+<test id="s1-t1" name="UAT-Lab04-001-TC01: Open Workshop Registration Page" line="19">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:54.913356" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T08:59:54.913176" elapsed="0.224057"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:55.137840" elapsed="0.224012"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:55.789049" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T08:59:55.362287" elapsed="0.427123"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:54.912854" elapsed="0.876838"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:54.912464" elapsed="0.877387"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:56.215382" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T08:59:55.790908" elapsed="0.424804"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:56.429096" level="INFO">Current page contains element 'id:firstname'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:56.216411" elapsed="0.213015"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:56.647915" level="INFO">Current page contains element 'id:lastname'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:56.430053" elapsed="0.218276"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:56.863887" level="INFO">Current page contains element 'id:organization'.</msg>
+<arg>${ORGANIZATION_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:56.649286" elapsed="0.214946"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:57.081033" level="INFO">Current page contains element 'id:email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:56.864845" elapsed="0.216540"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:57.301633" level="INFO">Current page contains element 'id:phone'.</msg>
+<arg>${PHONE_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.082011" elapsed="0.219956"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:57.518834" level="INFO">Current page contains element 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.302549" elapsed="0.216592"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:57.733144" level="INFO">Current location contains 'Lab4/Registration.html'.</msg>
+<arg>Lab4/Registration.html</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.519749" elapsed="0.213749"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T08:59:57.735185" level="INFO">Successfully opened Workshop Registration page</msg>
+<arg>Successfully opened Workshop Registration page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.734353" elapsed="0.000956"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.736902" elapsed="0.001115"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:57.739156" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.738854" elapsed="0.227377"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.738277" elapsed="0.228262"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T08:59:58.969444" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T08:59:57.966980" elapsed="1.002788"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:58.973028" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T08:59:58.971853" elapsed="0.211704"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:58.971184" elapsed="0.212762"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T08:59:58.970239" elapsed="0.213850"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:57.736161" elapsed="1.448068"/>
+</kw>
+<doc>Test Case 1: เปิดเว็บไซต์ Workshop Registration
+Expected Result: แสดงหน้า Workshop Registration
+
+Test Steps:
+1. เปิดเว็บไซต์ http://localhost:7272/Lab4/Registration.html
+
+Expected Result:
+- แสดงหน้า Workshop Registration
+- มีฟอร์มสำหรับกรอกข้อมูล First Name, Last Name, Organization, Email, Phone No.
+- มีปุ่ม Register</doc>
+<tag>Critical</tag>
+<tag>Navigation</tag>
+<tag>Positive</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T08:59:54.910811" elapsed="4.273682"/>
+</test>
+<test id="s1-t2" name="UAT-Lab04-001-TC02: Register Success With Organization Info" line="42">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T08:59:59.188285" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T08:59:59.188099" elapsed="0.218404"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T08:59:59.407350" elapsed="0.213998"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:00.042026" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T08:59:59.621903" elapsed="0.420466"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:59.187855" elapsed="0.854798"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T08:59:59.187514" elapsed="0.855298"/>
+</kw>
+<kw name="Fill Lab4 Complete Registration Form" owner="lab4_keywords">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:00.046249" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:00.045397" elapsed="0.206918"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:00.044797" elapsed="0.207893"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:00.254061" elapsed="0.428728"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:00.683313" elapsed="0.443828"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:01.128402" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:01.127660" elapsed="0.704728"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:00.253206" elapsed="1.579267"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:01.832775" elapsed="0.416004"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:02.249328" elapsed="0.440988"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:02.691233" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:02.690711" elapsed="0.668293"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:01.832599" elapsed="1.526780"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:03.360561" elapsed="0.423585"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:03.784732" elapsed="0.439560"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:04.225509" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:04.224804" elapsed="0.673968"/>
+</kw>
+<arg>${ORGANIZATION_FIELD}</arg>
+<arg>${organization}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:03.360007" elapsed="1.539107"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:04.900730" elapsed="0.426814"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:05.328087" elapsed="0.436545"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:05.765827" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:05.765141" elapsed="0.654623"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:04.899893" elapsed="1.519970"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:06.420226" elapsed="0.418610"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:06.839022" elapsed="0.435670"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:07.275864" level="INFO">Typing text '091-001-1234' into text field 'id:phone'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:07.275204" elapsed="0.673657"/>
+</kw>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:06.420004" elapsed="1.528947"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:07.949215" level="INFO">Filled complete registration form with all fields</msg>
+<arg>Filled complete registration form with all fields</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:07.949045" elapsed="0.000192"/>
+</kw>
+<arg>firstname=Somyod</arg>
+<arg>lastname=Sodsai</arg>
+<arg>organization=CS KKU</arg>
+<arg>email=somyod@kkumail.com</arg>
+<arg>phone=091-001-1234</arg>
+<doc>กรอกฟอร์มลงทะเบียน Lab4 แบบครบถ้วน</doc>
+<status status="PASS" start="2025-12-28T09:00:00.043589" elapsed="7.905677"/>
+</kw>
+<kw name="Submit Lab4 Registration Form" owner="lab4_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:07.949591" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:07.949497" elapsed="0.656561"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:10.609460" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:08.606436" elapsed="2.003347"/>
+</kw>
+<doc>กดปุ่มลงทะเบียน Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:07.949379" elapsed="2.660674"/>
+</kw>
+<kw name="Verify Lab4 Success Page" owner="lab4_keywords">
+<kw name="Wait Until Location Contains" owner="config">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:10.828101" level="INFO">Current location contains 'Success.html'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T09:00:10.613250" elapsed="0.215145"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+<arg>Location Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-12-28T09:00:10.612206" elapsed="0.216404"/>
+</kw>
+<arg>Success.html</arg>
+<arg>timeout=7s</arg>
+<doc>รอจนกว่า URL จะมีข้อความที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:10.611468" elapsed="0.217335"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:10.829142" elapsed="0.218520"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:11.475583" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:11.049304" elapsed="0.426654"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:11.898769" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:11.476402" elapsed="0.422515"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:12.105315" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T09:00:11.899107" elapsed="0.206438"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:12.106441" level="INFO">Lab4 Success page verified successfully</msg>
+<arg>Lab4 Success page verified successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.105885" elapsed="0.000656"/>
+</kw>
+<doc>ตรวจสอบหน้า Success ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:10.610752" elapsed="1.495955"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:12.107441" level="INFO">TC02 PASSED: Registration successful with organization info</msg>
+<arg>TC02 PASSED: Registration successful with organization info</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.107032" elapsed="0.000499"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.108558" elapsed="0.000579"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:12.110018" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.109795" elapsed="0.218615"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.109344" elapsed="0.219379"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:13.331929" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:12.329106" elapsed="1.003033"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:13.334540" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:13.333826" elapsed="0.209632"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:13.333325" elapsed="0.210467"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:13.332466" elapsed="0.211457"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:12.108074" elapsed="1.435979"/>
+</kw>
+<doc>Test Case 2: ลงทะเบียนสำเร็จพร้อมข้อมูลองค์กร
+Expected Result: แสดงหน้า Success.html
+
+Test Steps:
+1. กรอกข้อมูลที่ช่อง First Name = "Somyod"
+2. กรอกข้อมูลที่ช่อง Last Name = "Sodsai"
+3. กรอกข้อมูลที่ช่อง Organization = "CS KKU"
+4. กรอกข้อมูลที่ช่อง Email = "somyod@kkumail.com"
+5. กรอกข้อมูลที่ช่อง Phone No. = "091-001-1234"
+6. กดปุ่ม "Register"
+
+Expected Result:
+- แสดงหน้า Success.html
+- Title เป็น "Success"
+- แสดงข้อความ "Thank you for registering with us."
+- แสดงข้อความ "We will send a confirmation to your email soon."</doc>
+<tag>Critical</tag>
+<tag>Positive</tag>
+<tag>Success</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T08:59:59.185392" elapsed="14.358884"/>
+</test>
+<test id="s1-t3" name="UAT-Lab04-001-TC03: Register Success Without Organization Info" line="75">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:13.547646" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:13.547486" elapsed="0.216811"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:13.764861" elapsed="0.215798"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:14.404922" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:13.981202" elapsed="0.423995"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:13.547274" elapsed="0.858138"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:13.546967" elapsed="0.858546"/>
+</kw>
+<kw name="Fill Lab4 Registration Form Without Organization" owner="lab4_keywords">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:14.407877" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:14.407209" elapsed="0.214074"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:14.406943" elapsed="0.214744"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:14.623000" elapsed="0.423900"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:15.047624" elapsed="0.441954"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:15.490741" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:15.490068" elapsed="0.678150"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:14.622197" elapsed="1.546373"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:16.169977" elapsed="0.427258"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:16.597768" elapsed="0.440319"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:17.039372" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:17.038661" elapsed="0.678926"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:16.169132" elapsed="1.548787"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:17.719272" elapsed="0.426965"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:18.147075" elapsed="0.437370"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:18.585294" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:18.584824" elapsed="0.679762"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:17.718444" elapsed="1.546493"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:19.266308" elapsed="0.420425"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:19.687281" elapsed="0.440873"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:20.129383" level="INFO">Typing text '091-001-1234' into text field 'id:phone'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:20.128690" elapsed="0.686752"/>
+</kw>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:19.265471" elapsed="1.550319"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:20.816891" level="INFO">Filled registration form without organization</msg>
+<arg>Filled registration form without organization</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:20.816179" elapsed="0.000825"/>
+</kw>
+<arg>firstname=Somyod</arg>
+<arg>lastname=Sodsai</arg>
+<arg>email=somyod@kkumail.com</arg>
+<arg>phone=091-001-1234</arg>
+<doc>กรอกฟอร์มลงทะเบียน Lab4 โดยไม่มีองค์กร</doc>
+<status status="PASS" start="2025-12-28T09:00:14.406308" elapsed="6.410844"/>
+</kw>
+<kw name="Submit Lab4 Registration Form" owner="lab4_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:20.818649" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:20.818230" elapsed="0.675526"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:23.497063" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:21.494183" elapsed="2.003206"/>
+</kw>
+<doc>กดปุ่มลงทะเบียน Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:20.817691" elapsed="2.679972"/>
+</kw>
+<kw name="Verify Lab4 Success Page" owner="lab4_keywords">
+<kw name="Wait Until Location Contains" owner="config">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:23.710694" level="INFO">Current location contains 'Success.html'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T09:00:23.500698" elapsed="0.210301"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+<arg>Location Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-12-28T09:00:23.499698" elapsed="0.211518"/>
+</kw>
+<arg>Success.html</arg>
+<arg>timeout=7s</arg>
+<doc>รอจนกว่า URL จะมีข้อความที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:23.499044" elapsed="0.212364"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:23.711760" elapsed="0.213788"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:24.347046" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:23.926087" elapsed="0.421267"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:24.768913" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.347786" elapsed="0.421456"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:24.979427" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.769686" elapsed="0.210018"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:24.980558" level="INFO">Lab4 Success page verified successfully</msg>
+<arg>Lab4 Success page verified successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.980053" elapsed="0.000564"/>
+</kw>
+<doc>ตรวจสอบหน้า Success ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:23.498359" elapsed="1.482366"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:24.981198" level="INFO">TC03 PASSED: Registration successful without organization info</msg>
+<arg>TC03 PASSED: Registration successful without organization info</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.980962" elapsed="0.000283"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.981953" elapsed="0.000385"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:24.982844" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.982707" elapsed="0.225736"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:24.982453" elapsed="0.226431"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:26.212059" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:25.209299" elapsed="1.003291"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:26.215105" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:26.214415" elapsed="0.210997"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:26.213966" elapsed="0.211845"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:26.213150" elapsed="0.212810"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:24.981636" elapsed="1.444464"/>
+</kw>
+<doc>Test Case 3: ลงทะเบียนสำเร็จโดยไม่มีข้อมูลองค์กร
+Expected Result: แสดงหน้า Success.html
+
+Test Steps:
+1. กรอกข้อมูลที่ช่อง First Name = "Somyod"
+2. กรอกข้อมูลที่ช่อง Last Name = "Sodsai"
+3. กรอกข้อมูลที่ช่อง Email = "somyod@kkumail.com"
+4. กรอกข้อมูลที่ช่อง Phone No. = "091-001-1234"
+5. กดปุ่ม "Register"
+
+Expected Result:
+- แสดงหน้า Success.html
+- Title เป็น "Success"
+- แสดงข้อความ "Thank you for registering with us."
+- แสดงข้อความ "We will send a confirmation to your email soon."</doc>
+<tag>Critical</tag>
+<tag>Positive</tag>
+<tag>Success</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T09:00:13.544931" elapsed="12.881439"/>
+</test>
+<test id="s1-t4" name="UAT-Lab04-001-TC04: Valid Phone Format With Dash" line="106">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:26.430724" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:26.430521" elapsed="0.225165"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:26.656623" elapsed="0.213960"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:27.290115" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:26.871130" elapsed="0.419284"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:26.430274" elapsed="0.860408"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:26.429883" elapsed="0.860893"/>
+</kw>
+<kw name="Fill Lab4 Complete Registration Form" owner="lab4_keywords">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:27.293002" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:27.292387" elapsed="0.214611"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:27.291953" elapsed="0.215457"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:27.508840" elapsed="0.429149"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:27.938612" elapsed="0.442708"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:28.382876" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:28.381914" elapsed="0.677139"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:27.507974" elapsed="1.551446"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:29.060830" elapsed="0.427149"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:29.488474" elapsed="0.435254"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:29.924943" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:29.924239" elapsed="0.681177"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:29.059979" elapsed="1.545778"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:30.607312" elapsed="0.428663"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:31.036550" elapsed="0.452605"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:31.490466" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:31.489939" elapsed="0.673891"/>
+</kw>
+<arg>${ORGANIZATION_FIELD}</arg>
+<arg>${organization}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:30.606393" elapsed="1.557715"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:32.165237" elapsed="0.424327"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:32.590125" elapsed="0.442651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:33.034008" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:33.033326" elapsed="0.700228"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:32.164534" elapsed="1.569154"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:33.734176" elapsed="0.422241"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:34.156956" elapsed="0.441923"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:34.600108" level="INFO">Typing text '091-001-1234' into text field 'id:phone'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:34.599422" elapsed="0.683755"/>
+</kw>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:33.733881" elapsed="1.549649"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:35.284610" level="INFO">Filled complete registration form with all fields</msg>
+<arg>Filled complete registration form with all fields</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:35.283909" elapsed="0.000814"/>
+</kw>
+<arg>phone=091-001-1234</arg>
+<doc>กรอกฟอร์มลงทะเบียน Lab4 แบบครบถ้วน</doc>
+<status status="PASS" start="2025-12-28T09:00:27.291301" elapsed="7.993570"/>
+</kw>
+<kw name="Submit Lab4 Registration Form" owner="lab4_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:35.286334" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:35.285915" elapsed="0.682002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:37.971281" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:35.968493" elapsed="2.003114"/>
+</kw>
+<doc>กดปุ่มลงทะเบียน Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:35.285385" elapsed="2.686494"/>
+</kw>
+<kw name="Verify Lab4 Success Page" owner="lab4_keywords">
+<kw name="Wait Until Location Contains" owner="config">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:38.183601" level="INFO">Current location contains 'Success.html'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T09:00:37.974614" elapsed="0.209303"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+<arg>Location Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-12-28T09:00:37.973914" elapsed="0.210223"/>
+</kw>
+<arg>Success.html</arg>
+<arg>timeout=7s</arg>
+<doc>รอจนกว่า URL จะมีข้อความที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:37.973264" elapsed="0.211062"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:38.184675" elapsed="0.214980"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:38.820449" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:38.400151" elapsed="0.420619"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:39.244617" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:38.821209" elapsed="0.423742"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:39.458105" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.245401" elapsed="0.213033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:39.459593" level="INFO">Lab4 Success page verified successfully</msg>
+<arg>Lab4 Success page verified successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.458897" elapsed="0.000798"/>
+</kw>
+<doc>ตรวจสอบหน้า Success ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:37.972581" elapsed="1.487276"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:39.460675" level="INFO">TC04 PASSED: Phone format with dash accepted</msg>
+<arg>TC04 PASSED: Phone format with dash accepted</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.460255" elapsed="0.000512"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.461949" elapsed="0.000639"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:39.463534" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.463288" elapsed="0.220466"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.462813" elapsed="0.221526"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:40.686513" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:39.684729" elapsed="1.002010"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:40.688641" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:40.687897" elapsed="0.207703"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:40.687494" elapsed="0.208528"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:40.686971" elapsed="0.209208"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:39.461402" elapsed="1.434915"/>
+</kw>
+<doc>Test Case 4: ทดสอบรูปแบบเบอร์โทรศัพท์ที่ถูกต้องแบบ XXX-XXX-XXXX
+Expected Result: ลงทะเบียนสำเร็จ
+
+Test Steps:
+1. กรอกข้อมูลที่ช่อง First Name = "Somyod"
+2. กรอกข้อมูลที่ช่อง Last Name = "Sodsai"
+3. กรอกข้อมูลที่ช่อง Organization = "CS KKU"
+4. กรอกข้อมูลที่ช่อง Email = "somyod@kkumail.com"
+5. กรอกข้อมูลที่ช่อง Phone No. = "091-001-1234" (format: XXX-XXX-XXXX)
+6. กดปุ่ม "Register"
+
+Expected Result:
+- ลงทะเบียนสำเร็จและแสดงหน้า Success.html</doc>
+<tag>Normal</tag>
+<tag>PhoneFormat</tag>
+<tag>Positive</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T09:00:26.427128" elapsed="14.469455"/>
+</test>
+<test id="s1-t5" name="UAT-Lab04-001-TC05: Valid Phone Format With Dot" line="126">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:40.901284" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:40.901025" elapsed="0.224554"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:41.126136" elapsed="0.213198"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:41.761247" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:41.339584" elapsed="0.421924"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:40.900646" elapsed="0.861066"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:40.899826" elapsed="0.861977"/>
+</kw>
+<kw name="Fill Lab4 Complete Registration Form" owner="lab4_keywords">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:41.764854" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:41.763495" elapsed="0.214280"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:41.763170" elapsed="0.214904"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:41.979156" elapsed="0.424944"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:42.404642" elapsed="0.439488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:42.845338" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:42.844652" elapsed="0.669075"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:41.978466" elapsed="1.535618"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:43.515134" elapsed="0.433903"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:43.949438" elapsed="0.434990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:44.385234" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:44.384753" elapsed="0.686293"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:43.514503" elapsed="1.557004"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:45.072726" elapsed="0.427658"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:45.500932" elapsed="0.441289"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:45.943340" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:45.943032" elapsed="0.683977"/>
+</kw>
+<arg>${ORGANIZATION_FIELD}</arg>
+<arg>${organization}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:45.071962" elapsed="1.555392"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:46.628714" elapsed="0.421986"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:47.051310" elapsed="0.440073"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:47.492554" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:47.491882" elapsed="0.683397"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:46.627884" elapsed="1.547752"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:48.177037" elapsed="0.423679"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:48.601092" elapsed="0.435715"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:49.038015" level="INFO">Typing text '091.001.1234' into text field 'id:phone'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:49.037316" elapsed="0.683607"/>
+</kw>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:48.176159" elapsed="1.545092"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:49.722351" level="INFO">Filled complete registration form with all fields</msg>
+<arg>Filled complete registration form with all fields</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:49.721639" elapsed="0.000915"/>
+</kw>
+<arg>phone=091.001.1234</arg>
+<doc>กรอกฟอร์มลงทะเบียน Lab4 แบบครบถ้วน</doc>
+<status status="PASS" start="2025-12-28T09:00:41.762450" elapsed="7.960358"/>
+</kw>
+<kw name="Submit Lab4 Registration Form" owner="lab4_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:49.724308" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:49.723890" elapsed="0.687107"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:52.412320" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:50.411412" elapsed="2.001236"/>
+</kw>
+<doc>กดปุ่มลงทะเบียน Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:49.723344" elapsed="2.689575"/>
+</kw>
+<kw name="Verify Lab4 Success Page" owner="lab4_keywords">
+<kw name="Wait Until Location Contains" owner="config">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:52.627184" level="INFO">Current location contains 'Success.html'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T09:00:52.416353" elapsed="0.211173"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+<arg>Location Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-12-28T09:00:52.415436" elapsed="0.212314"/>
+</kw>
+<arg>Success.html</arg>
+<arg>timeout=7s</arg>
+<doc>รอจนกว่า URL จะมีข้อความที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:52.414752" elapsed="0.213198"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:52.628309" elapsed="0.214133"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:53.263088" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:52.842935" elapsed="0.420487"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:53.682215" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.263867" elapsed="0.418683"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:53.892274" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.682947" elapsed="0.209533"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:53.893141" level="INFO">Lab4 Success page verified successfully</msg>
+<arg>Lab4 Success page verified successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.892744" elapsed="0.000453"/>
+</kw>
+<doc>ตรวจสอบหน้า Success ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:52.413987" elapsed="1.479298"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:00:53.893703" level="INFO">TC05 PASSED: Phone format with dot accepted</msg>
+<arg>TC05 PASSED: Phone format with dot accepted</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.893486" elapsed="0.000263"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.894485" elapsed="0.000341"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:53.895329" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.895179" elapsed="0.232144"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:53.894937" elapsed="0.232718"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:00:55.129210" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:00:54.128054" elapsed="1.001576"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:55.134219" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:55.131744" elapsed="0.213486"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:55.131138" elapsed="0.214450"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:00:55.130169" elapsed="0.215558"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:53.894200" elapsed="1.451659"/>
+</kw>
+<doc>Test Case 5: ทดสอบรูปแบบเบอร์โทรศัพท์ที่ถูกต้องแบบ XXX.XXX.XXXX
+Expected Result: ลงทะเบียนสำเร็จ
+
+Test Steps:
+1. กรอกข้อมูลที่ช่อง First Name = "Somyod"
+2. กรอกข้อมูลที่ช่อง Last Name = "Sodsai"
+3. กรอกข้อมูลที่ช่อง Organization = "CS KKU"
+4. กรอกข้อมูลที่ช่อง Email = "somyod@kkumail.com"
+5. กรอกข้อมูลที่ช่อง Phone No. = "091.001.1234" (format: XXX.XXX.XXXX)
+6. กดปุ่ม "Register"
+
+Expected Result:
+- ลงทะเบียนสำเร็จและแสดงหน้า Success.html</doc>
+<tag>Normal</tag>
+<tag>PhoneFormat</tag>
+<tag>Positive</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T09:00:40.897523" elapsed="14.448581"/>
+</test>
+<test id="s1-t6" name="UAT-Lab04-001-TC06: Valid Phone Format With Space" line="146">
+<kw name="Lab4 Test Setup" owner="lab4_keywords" type="SETUP">
+<kw name="Navigate To Lab4 Registration Page" owner="lab4_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:55.351351" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:00:55.351049" elapsed="0.224767"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:00:55.576366" elapsed="0.213239"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:56.213720" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:00:55.790154" elapsed="0.423865"/>
+</kw>
+<doc>ไปยังหน้า Workshop Registration ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:55.350624" elapsed="0.863644"/>
+</kw>
+<doc>Setup สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:55.350041" elapsed="0.864360"/>
+</kw>
+<kw name="Fill Lab4 Complete Registration Form" owner="lab4_keywords">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:56.217591" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:00:56.216595" elapsed="0.211537"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:00:56.216139" elapsed="0.212397"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:56.429874" elapsed="0.426461"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:56.856719" elapsed="0.437910"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:57.295877" level="INFO">Typing text 'Somyod' into text field 'id:firstname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:57.295172" elapsed="0.667037"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:56.429043" elapsed="1.533409"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:57.963622" elapsed="0.422969"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:58.387128" elapsed="0.438085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:00:58.826414" level="INFO">Typing text 'Sodsai' into text field 'id:lastname'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:58.825721" elapsed="0.681554"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:57.962965" elapsed="1.544572"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:00:59.508648" elapsed="0.424704"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:00:59.933891" elapsed="0.438180"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:00.373347" level="INFO">Typing text 'CS KKU' into text field 'id:organization'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:00.372624" elapsed="0.681222"/>
+</kw>
+<arg>${ORGANIZATION_FIELD}</arg>
+<arg>${organization}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:00:59.507947" elapsed="1.546259"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:01:01.055551" elapsed="0.429646"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:01.485750" elapsed="0.442150"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:01.929026" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id:email'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:01.928386" elapsed="0.682787"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:01:01.054731" elapsed="1.556788"/>
+</kw>
+<kw name="Fill Lab4 Form Field" owner="lab4_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-28T09:01:02.612871" elapsed="0.427820"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field_locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:03.041227" elapsed="0.442456"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:03.484856" level="INFO">Typing text '091 001 1234' into text field 'id:phone'.</msg>
+<arg>${field_locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:03.484176" elapsed="0.680903"/>
+</kw>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>กรอกข้อมูลในช่องที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:01:02.612040" elapsed="1.553383"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:01:04.166525" level="INFO">Filled complete registration form with all fields</msg>
+<arg>Filled complete registration form with all fields</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:01:04.165807" elapsed="0.000833"/>
+</kw>
+<arg>phone=091 001 1234</arg>
+<doc>กรอกฟอร์มลงทะเบียน Lab4 แบบครบถ้วน</doc>
+<status status="PASS" start="2025-12-28T09:00:56.215067" elapsed="7.951726"/>
+</kw>
+<kw name="Submit Lab4 Registration Form" owner="lab4_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:04.168345" level="INFO">Clicking button 'id:registerButton'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T09:01:04.167906" elapsed="0.675989"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:01:06.846058" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:01:04.844320" elapsed="2.002057"/>
+</kw>
+<doc>กดปุ่มลงทะเบียน Lab4</doc>
+<status status="PASS" start="2025-12-28T09:01:04.167343" elapsed="2.679308"/>
+</kw>
+<kw name="Verify Lab4 Success Page" owner="lab4_keywords">
+<kw name="Wait Until Location Contains" owner="config">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:07.062029" level="INFO">Current location contains 'Success.html'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-12-28T09:01:06.849507" elapsed="0.212856"/>
+</kw>
+<arg>${timeout}</arg>
+<arg>1s</arg>
+<arg>Location Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-12-28T09:01:06.848650" elapsed="0.213929"/>
+</kw>
+<arg>Success.html</arg>
+<arg>timeout=7s</arg>
+<doc>รอจนกว่า URL จะมีข้อความที่กำหนด</doc>
+<status status="PASS" start="2025-12-28T09:01:06.848028" elapsed="0.214743"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-28T09:01:07.063120" elapsed="0.214447"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:07.696971" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:01:07.278089" elapsed="0.419203"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:08.119643" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T09:01:07.697739" elapsed="0.422162"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:08.328257" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.120226" elapsed="0.208332"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:01:08.329899" level="INFO">Lab4 Success page verified successfully</msg>
+<arg>Lab4 Success page verified successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.329209" elapsed="0.000794"/>
+</kw>
+<doc>ตรวจสอบหน้า Success ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:01:06.847353" elapsed="1.482817"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:01:08.330739" level="INFO">TC06 PASSED: Phone format with space accepted</msg>
+<arg>TC06 PASSED: Phone format with space accepted</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.330501" elapsed="0.000289"/>
+</kw>
+<kw name="Lab4 Test Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.331534" elapsed="0.000392"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:08.332444" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.332303" elapsed="0.241558"/>
+</kw>
+<arg>Go To</arg>
+<arg>${LAB4_REGISTRATION_URL}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.332043" elapsed="0.242269"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T09:01:09.576181" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T09:01:08.574907" elapsed="1.001606"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Clear All Lab4 Form Fields" owner="lab4_keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-12-28T09:01:09.579055" level="INFO">Executing JavaScript:
+try {document.getElementById('firstname').value = '';document.getElementById('lastname').value = '';document.getElementById('organization').value = '';document.getElementById('email').value = '';document.getElementById('phone').value = '';document.getElementById('errors').innerHTML = '';} catch(e) {console.log('Form clearing error: ' + e.message);}
+Without any arguments.</msg>
+<arg>try {</arg>
+<arg>document.getElementById('firstname').value = '';</arg>
+<arg>document.getElementById('lastname').value = '';</arg>
+<arg>document.getElementById('organization').value = '';</arg>
+<arg>document.getElementById('email').value = '';</arg>
+<arg>document.getElementById('phone').value = '';</arg>
+<arg>document.getElementById('errors').innerHTML = '';</arg>
+<arg>} catch(e) {</arg>
+<arg>console.log('Form clearing error: ' + e.message);</arg>
+<arg>}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-12-28T09:01:09.578255" elapsed="0.210404"/>
+</kw>
+<doc>ล้างข้อมูลทุกช่องในฟอร์ม Lab4</doc>
+<status status="PASS" start="2025-12-28T09:01:09.577840" elapsed="0.211225"/>
+</kw>
+<arg>Clear All Lab4 Form Fields</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-12-28T09:01:09.576986" elapsed="0.212235"/>
+</kw>
+<doc>Teardown สำหรับแต่ละ test case ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:01:08.331211" elapsed="1.458181"/>
+</kw>
+<doc>Test Case 6: ทดสอบรูปแบบเบอร์โทรศัพท์ที่ถูกต้องแบบ XXX XXX XXXX
+Expected Result: ลงทะเบียนสำเร็จ
+
+Test Steps:
+1. กรอกข้อมูลที่ช่อง First Name = "Somyod"
+2. กรอกข้อมูลที่ช่อง Last Name = "Sodsai"
+3. กรอกข้อมูลที่ช่อง Organization = "CS KKU"
+4. กรอกข้อมูลที่ช่อง Email = "somyod@kkumail.com"
+5. กรอกข้อมูลที่ช่อง Phone No. = "091 001 1234" (format: XXX XXX XXXX)
+6. กดปุ่ม "Register"
+
+Expected Result:
+- ลงทะเบียนสำเร็จและแสดงหน้า Success.html</doc>
+<tag>Normal</tag>
+<tag>PhoneFormat</tag>
+<tag>Positive</tag>
+<tag>UAT-Lab04-001</tag>
+<status status="PASS" start="2025-12-28T09:00:55.346780" elapsed="14.442885"/>
+</test>
+<kw name="Lab4 Suite Teardown" owner="lab4_keywords" type="TEARDOWN">
+<kw name="Close Lab4 Test Browser" owner="lab4_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-28T09:01:09.791900" elapsed="0.279782"/>
+</kw>
+<doc>ปิด Browser</doc>
+<status status="PASS" start="2025-12-28T09:01:09.791711" elapsed="0.280205"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-28T09:01:10.072730" level="INFO">Lab4 Test Suite Completed</msg>
+<arg>Lab4 Test Suite Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-28T09:01:10.072265" elapsed="0.000544"/>
+</kw>
+<doc>Teardown สำหรับ test suite ของ Lab4</doc>
+<status status="PASS" start="2025-12-28T09:01:09.791317" elapsed="0.281594"/>
+</kw>
+<doc>UAT-Lab04-001: ลงทะเบียนเข้าร่วมอบรมเชิงปฏิบัติการสำเร็จ
+Project: WEB-Lab-04 - เว็บไซต์ Lab 04 Software Engineering
+Module: Workshop Registration
+Version: V1.0
+Test Scenario: เมื่อกรอกชื่อ นามสกุล ต้นสังกัด อีเมล และเบอร์โทรศัพท์ถูกต้อง
+โดยที่จะกรอกข้อมูลหน่วยงานหรือไม่กรอกก็ได้ เมื่อกดปุ่ม Register
+ระบบจะแสดงหน้าลงทะเบียนสำเร็จ (Success.html)</doc>
+<status status="PASS" start="2025-12-28T08:59:53.601944" elapsed="76.471024"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">Critical</stat>
+<stat pass="1" fail="0" skip="0">Navigation</stat>
+<stat pass="3" fail="0" skip="0">Normal</stat>
+<stat pass="3" fail="0" skip="0">PhoneFormat</stat>
+<stat pass="6" fail="0" skip="0">Positive</stat>
+<stat pass="2" fail="0" skip="0">Success</stat>
+<stat pass="6" fail="0" skip="0">UAT-Lab04-001</stat>
+</tag>
+<suite>
+<stat name="Lab4 Valid" id="s1" pass="6" fail="0" skip="0">Lab4 Valid</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
