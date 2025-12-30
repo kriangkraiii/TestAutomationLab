@@ -36,7 +36,7 @@
 ## Test Scenario ID: UAT-Lab04-002
 **Test Scenario Name**: ลงทะเบียนเข้าร่วมอบรมเชิงปฏิบัติการไม่สำเร็จ  
 **Date of Test**: December 26, 2025  
-**Tested by**: [ชื่อผู้ทดสอบ]
+**Tested by**: เกรียงไกร ประเสริฐ
 
 ---
 
@@ -160,4 +160,4 @@ Actual Result:
 **Test Execution Date**: December 26, 2025  
 **Browser**: Chrome (Latest)  
 **Test Environment**: http://localhost:7272  
-**Tester**: [Your Name]
+**Tester**: เกรียงไกร ประเสริฐ
