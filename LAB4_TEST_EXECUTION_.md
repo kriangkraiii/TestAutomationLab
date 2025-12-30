@@ -1,9 +1,9 @@
-# Lab4 Test Execution Report - ตัวอย่างการกรอก Actual Result
+# Lab4 Test Execution Report 
 
 ## Test Scenario ID: UAT-Lab04-001
 **Test Scenario Name**: ลงทะเบียนเข้าร่วมอบรมเชิงปฏิบัติการสำเร็จ  
 **Date of Test**: December 26, 2025  
-**Tested by**: [ชื่อผู้ทดสอบ]
+**Tested by**: เกรียงไกร ประเสริฐ
 
 ---
 
